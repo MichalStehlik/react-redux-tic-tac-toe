@@ -22,7 +22,6 @@ class Cell extends Component {
 
 function mapStateToProps(state,ownProps) {
     return {
-        sequence: state.game.sequence,
         cellValue: state.game.board[ownProps.x][ownProps.y].mark,
         cellMarked: state.game.board[ownProps.x][ownProps.y].marked
     };
